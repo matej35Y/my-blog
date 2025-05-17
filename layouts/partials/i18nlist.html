@@ -1,0 +1,6 @@
+<span>Достапно и на</span>
+{{ range .Translations }}
+  <a href="{{ .RelPermalink }}">
+    <img src="/images/flags/{{ .Lang }}.svg" style="width: 18px; border-radius: 50%; vertical-align: middle;" />
+</a>
+{{ end }}

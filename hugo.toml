@@ -1,0 +1,141 @@
+baseURL = "https://example.com"
+title = "Matej Machevski"
+languageCode = "en-us"
+theme = "hello-friend-ng"
+
+PygmentsCodeFences = true
+PygmentsStyle = "monokai"
+
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
+
+archetypeDir = "archetypes"
+contentDir = "content"
+dataDir = "data"
+layoutDir = "layouts"
+publishDir = "public"
+
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+canonifyURLs = true
+
+enableRobotsTXT = true
+enableGitInfo = false
+enableEmoji = true
+enableMissingTranslationPlaceholders = false
+disableRSS = false
+disableSitemap = false
+disable404 = false
+disableHugoGeneratorInject = false
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[pagination]
+  disableAliases = false
+  pagerSize = 20
+  path = "page"
+
+[services]
+  [services.rss]
+    limit = 42
+  # [services.disqus]
+  #   shortname = 'your-disqus-shortname'
+  # [services.googleAnalytics]
+  #   ID = 'G-MEASUREMENT_ID'
+
+[permalinks]
+  posts = "/posts/:year/:month/:title/"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  series = "series"
+
+[params]
+  dateform = "Jan 2, 2006"
+  dateformShort = "Jan 2"
+  dateformNum = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
+  description = "Nice theme for homepages and blogs"
+  keywords = ""
+  images = [""]
+  homeSubtitle = "CS Student | Full Stack Enthusiast | Creative Coder | Hooper"
+  disableReadOtherPosts = false
+  enableThemeToggle = true
+  enableSharingButtons = false
+  enableGlobalLanguageMenu = true
+  customCSS = []
+  customJS = []
+  justifyContent = false
+
+  [params.author]
+    name = "Matej Machevski"
+
+  [params.footer]
+    trademark = "Matej Machevski * 2025"
+    rss = false
+    copyright = false
+    author = false
+    topText = []
+    bottomText = [
+      "Powered by <a href=\"http://gohugo.io\">Hugo</a>",
+      "Made with &#10084; by <a href=\"https://github.com/rhazdon\">Djordje Atlialp</a>"
+    ]
+
+  [params.favicon.color]
+    mask = "#1b1c1d"
+    msapplication = "#1b1c1d"
+    theme = "#1b1c1d"
+
+  [params.logo]
+    logoMark = "»"
+    logoText = "$ cd /home/"
+    logoHomeLink = "/"
+    logoCursorColor = "#16b840"
+    logoCursorAnimate = "1.25s"
+
+  [[params.social]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/"
+
+  [[params.social]]
+    name = "email"
+    url = "mailto:matejmacevski35@gmail.com"
+
+  [[params.social]]
+    name = "github"
+    url = "https://github.com/matej35Y"
+
+[languages]
+  [languages.en]
+    weight = 1
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+    [languages.en.params]
+      subtitle = "CS Student | Full Stack Enthusiast | Creative Coder"
+
+  [languages.mk]
+    weight = 2
+    copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
+    [languages.mk.params]
+      subtitle = ""
+
+[[menu.main]]
+  identifier = "about"
+  name = "About"
+  url = "/about/"
+  weight = 1
+
+[[menu.main]]
+  identifier = "skills"
+  name = "Skills"
+  url = "/skills/"
+  weight = 2
+
+[[menu.main]]
+  identifier = "projects"
+  name = "Projects"
+  url = "/projects/"
+  weight = 3
